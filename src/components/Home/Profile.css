@@ -1,0 +1,114 @@
+.main{
+    background-image:url("../../assets/images.jpeg");
+        /* background-repeat: no-repeat; */
+        /* height: 1000px;
+        width: 1800px; */
+
+}
+.profile-container{
+    /* background-image: url(https://img.freepik.com/free-photo/blue-toned-set-paper-sheets-with-copy-space_23-2148320447.jpg?w=826&t=st=1692687686~exp=1692688286~hmac=e07183c3161d4cbc745d626fc2b905f237694693defc3955a77aad5f82f70315); */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* height: 700%; */
+    /* min-height: fit-content; */
+}
+.profile-details-name{
+    font-size: 25px;
+    padding-bottom: 0px;
+}
+.name{
+    margin-left: 6px;
+
+}
+.my-role{
+font-size: 30px;
+font-style: italic;
+}
+.button-hire:hover{
+  background-color: cornsilk;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* .button-resume:visited{
+background-color: black;
+text-decoration: none;
+} */
+.button-resume{
+text-decoration: none;
+font-style: italic;
+font-size: 20px;
+}
+.profile-pic{
+    background-image: url("../../assets/Profilepicture.jpeg");
+    border-radius: 50%;
+    box-shadow: 0 10px 10px 0 wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 280px;
+     width: 280px;
+     background-size: cover;
+    margin-left: 1300px;
+}
+.profile-pic:hover{
+    /* transform:scale(1.07); */
+    transform:rotate(360deg);
+    transition: 1s ease-out;
+}
+.name-span{
+    position: absolute;
+    top: 40px;
+    /* padding-bottom: 100px; */
+}
+/* .width-icon i:hover{
+    transform: scale(1.3);
+} */
+
+/* Responsiveness */
+/* for i-pad pro */
+/* @media screen and (max-width:1110px){
+    .profile-pic{
+        margin:0 0 0 450px;
+        width: 100px;
+        height: 100px;
+    }
+    .profile-details-name{
+        font-size: 12px;
+    }
+} */
+
+ /* iphone 12 pro 390-844 */
+ @media screen and (min-width: 280px) and (max-width: 844px){
+    .profile-pic{
+        margin:0 0 0 150px;
+        width: 100px;
+        height: 100px;
+    }
+    .profile-details-name{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .my-role{
+        font-size: 12px;
+    }
+ }
+
+ /* @media screen and (min-width: 390px) and (max-width: 844px) {
+    .profile-pic {
+        margin: 0 0 0 150px;
+        width: 100px;
+        height: 100px;
+    }
+    .profile-details-name { */
+        /* font-size: 10px; Fixed the typo "is10px" to "10px"
+        margin-left: 10px;
+    }
+    .my-role {
+        font-size: 12px;
+    }
+} */

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-// import Typical from "react-typical"
+import Typical from "react-typical";
+import "./Profile.css"
+import Profilepicture from "../../assets/Profilepicture.jpeg"
 
 export default function Profile() {
   const steps = [
@@ -8,7 +10,7 @@ export default function Profile() {
     "React/React Native Developer",
   ];
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
-
+  
   //   The useEffect Hook allows you to perform side effects in your components.
   // Some examples of side effects are: fetching data, directly updating the DOM, and timers.
   // useEffect accepts two arguments. The second argument is optional.
@@ -30,17 +32,19 @@ export default function Profile() {
   // },[currentStepIndex]);
 
   return (
+    <div className="main">
     <div className="profile-container">
       <div className="profile-parent">
         <div className="profile-details">
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center colz-icon">
+            <div></div>
             <a
               className="px-2 py-3"
               target="_blank"
               href="https://github.com/kuldeepverma14"
             >
-              <i className="bi bi-github"></i>
-              <img src="" alt="" />
+              <i className="bi bi-github "></i>
+              {/* <img src="" alt="" /> */}
             </a>
 
             <a
@@ -66,25 +70,40 @@ export default function Profile() {
             >
               <i className="bi bi-envelope"></i>
             </a>
+          {/* <div className="profile-pic"> <img src={Profilepicture} alt="" /> </div> */}
+          <div className="profile-pic"> </div>
           </div>
           <div className="d-flex justify-content-center profile-details-name">
-            <span className="">
-              Hello,I'm{" "}
-              <span className="fw-bold text-uppercase">Kuldeep Verma</span>
-            </span>
+            <div className="name-span">
+             <span>Hello , I'm <span className="fw-bold text-uppercase name"> Kuldeep Verma</span></span> 
+            <p className="my-role">{steps[currentStepIndex]}</p>
+              </div>
           </div>
+          
           <div className="d-flex justify-content-center">
             {/* <p>Typical Steps</p>  */}
-            <div>
-              <p className="">{steps[currentStepIndex]}</p>
-              {/* <p className="">{steps}</p> */}
-            </div>
+            {/* {" "}
+            <Typical 
+            steps={["Enthusiastic Developer",2000,"Frontend Developer",1000,"kd bro",2000]}
+            loop={Infinity}
+          wrapper="p"
+            /> */}
+            <div>{/* <p className="">{steps}</p> */}</div>
+          </div>
+          <div className="d-flex justify-content-center m-5">
+            <span className="">Description about me as a Developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nostrum? Qui inventore natus corrupti saepe eum obcaecati eveniet excepturi placeat nam in, ducimus officiis culpa. Alias labore ipsam eum temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit possimus, impedit adipisci cumque reiciendis odio enim beatae eligendi, inventore placeat et ab aperiam quasi! Voluptatibus cum ipsam optio at eveniet earum, ducimus voluptatum quia quo ipsum. Aliquam quis maiores, provident voluptatem praesentium quaerat repellat mollitia, harum impedit non recusandae. Quidem. </span>
           </div>
           <div className="d-flex justify-content-center">
-            <span className="">Description about me as a Developer.</span>
+          </div>
+          <div className="d-flex justify-content-center m-3">
+            <button className="btn btn-primary button-hire ">Hire Me</button>
+            <a href="Kuldeep verma.pdf" download={"Kuldeep-verma_resume.pdf"}>
+              <button className="btn btn-link button-resume ">Get Resume</button>{" "}
+            </a>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
