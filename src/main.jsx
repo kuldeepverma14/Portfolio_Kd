@@ -1,21 +1,10 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-const Home = () => <div>Home Component</div>;
-const NotFound = () => <div>404 Not Found</div>;
-
-// const router = createBrowserRouter([
-//     {
-//         path: "/",
-//         element: <Home />,
-//         errorElement: <NotFound />,
-//     },
-// ]);
-
+import { RouterProvider } from 'react-router-dom';
+import Router from './Router/Router';
+import Loading from './Loading';
+import "./index.css"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    Test Text
-    {/* <RouterProvider router={router} /> */}
+    <RouterProvider router={Router} fallbackElement={<Loading />} />
   </>
 );

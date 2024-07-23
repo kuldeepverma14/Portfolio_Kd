@@ -1,24 +1,21 @@
-// import { Outlet } from "react-router-dom"
-// import Header from "./components/Header/Header"
-// import Sidebar from "./components/Sidebar/Sidebar"
-
+import { Outlet } from "react-router-dom"
+import Header from "./components/Header/Header"
+import Sidebar from "./components/Sidebar/Sidebar"
 function Layout() {
     return (
-        <>
-        sdfg
-            {/* <div>
-
+        <div className="flex flex-row ">
+            <div className="bg-red-500" >
                 <Sidebar />
             </div>
-            <div>
-
-                <Header />
+            <div className="">
+                <div>
+                    <Header />
+                </div>
+                <div>
+                    <Outlet />
+                </div>
             </div>
-            <div>
-
-                <Outlet />
-            </div> */}
-        </>
+        </div>
     )
 }
 
