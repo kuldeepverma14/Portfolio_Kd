@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import Profile from './components/Home/Profile'
-import Footer from './components/Home/Footer/Footer'
+// import { Route, BrowserRouter as Router, Routes, } from "react-router-dom"
+// import Layout from "./Layout"
+// import R from "./R"
+// import Routing from "./Router/Routing"
+// function App() {
+//   const [{ path, element }] = Routing
+//   console.log(path)
+//   return (
+//     <>
+//      <R>
+//       <Layout/>
+//      </R>
+//     </>
+//   )
+// }
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <Profile />
-     <Footer />   
-    </>
-  )
-}
-
-export default App
+// export default App
