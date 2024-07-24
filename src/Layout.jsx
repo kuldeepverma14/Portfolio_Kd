@@ -1,20 +1,21 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import Header from "./components/Header/Header"
-import Sidebar from "./components/Sidebar/Sidebar"
 function Layout() {
+    const location = useLocation()
+    console.log(location.hash, "sdfg")
+
     return (
         <div className="flex flex-row ">
-            <div className="bg-red-500" >
-                <Sidebar />
-            </div>
-            <div className="">
-                <div>
+            <div className="shrink w-[15%]"></div>
+            <div className="flex-1 bg-red-400">
+                {location.pathname === "/" && <div className="">
                     <Header />
-                </div>
-                <div>
+                </div>}
+                <div className="">
                     <Outlet />
                 </div>
             </div>
+            <div className="shrink w-[15%]"></div>
         </div>
     )
 }
