@@ -7,8 +7,8 @@ function Layout() {
     return (
         <div className="flex flex-row ">
             <div className="shrink w-[15%]"></div>
-            <div className="flex-1 bg-red-400">
-                {location.pathname === "/" && <div className="">
+            <div className="flex-1 ">
+                {location.pathname !== "/" && <div className="">
                     <Header />
                 </div>}
                 <div className="">

@@ -1,22 +1,18 @@
-import { NavLink } from "react-router-dom"
+import CustomNavLink from "../CustomNavLink/CustomNavLink";
 
 function Header() {
   return (
-    <div>create header using NavLink
-
+    <>
       <nav>
-        <NavLink to="/" end style={({ isActive }) => ({ color: isActive ? 'red' : 'black' })}>
-          Home
-        </NavLink>
-        <NavLink to="/about" style={({ isActive }) => ({ color: isActive ? 'red' : 'black' })}>
-          About
-        </NavLink>
-        <NavLink to="/contact" style={({ isActive }) => ({ color: isActive ? 'red' : 'black' })}>
-          Contact
-        </NavLink>
+        <CustomNavLink to="/">Home</CustomNavLink>
+        <CustomNavLink to="/about">About</CustomNavLink>
+        <CustomNavLink to="/resume">Resume</CustomNavLink>
+        <CustomNavLink to="/services">Services</CustomNavLink>
+        <CustomNavLink to="/portfolio">Portfolio</CustomNavLink>
+        <CustomNavLink to="/contact">Contact</CustomNavLink>
       </nav>
-    </div>
-  )
+    </>
+  );
 }
 
 export default Header

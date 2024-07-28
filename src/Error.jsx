@@ -7,7 +7,7 @@ function Error() {
         <div className='text-red-500' > <h1>Oops!</h1>
             <p>Sorry, an unexpected error has occurred.</p>
             <p>
-                {error.statusText || error.message}
+                Page : {error.statusText || error.message}
             </p>
         </div>
     )
