@@ -5,17 +5,19 @@ function Layout() {
     console.log(location.hash, "sdfg")
 
     return (
-        <div className="flex flex-row ">
-            <div className="shrink w-[15%]"></div>
-            <div className="flex-1 ">
-                {location.pathname !== "/" && <div className="">
+        <div className=" text-black ">
+            <div className=" ">
+                {location.pathname !== "/" &&
                     <Header />
-                </div>}
-                <div className="">
-                    <Outlet />
+                }
+                <div className="flex bg-[#0D0D0D]">
+                    {location.pathname !== "/" && <div className="shrink w-[15%] "></div>}
+                    <div className={` ${location.pathname !== "/" ? "w-[70%]" : "w-[100%]"}  `}>
+                        <Outlet />
+                    </div>
+                    {location.pathname !== "/" && <div className="shrink w-[15%] "></div>}
                 </div>
             </div>
-            <div className="shrink w-[15%]"></div>
         </div>
     )
 }
