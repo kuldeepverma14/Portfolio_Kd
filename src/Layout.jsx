@@ -11,11 +11,11 @@ function Layout() {
                     <Header />
                 }
                 <div className="flex bg-[#0D0D0D]">
-                    {location.pathname !== "/" && <div className="shrink w-[15%] "></div>}
-                    <div className={` ${location.pathname !== "/" ? "w-[70%]" : "w-[100%]"}  `}>
+                    {location.pathname !== "/" && <div className="shrink xsm:w-[10%] "></div>}
+                    <div className={` ${location.pathname !== "/" ? " xsm:w-[80%]" : "w-[100%]"}  `}>
                         <Outlet />
                     </div>
-                    {location.pathname !== "/" && <div className="shrink w-[15%] "></div>}
+                    {location.pathname !== "/" && <div className="shrink xsm:w-[10%] "></div>}
                 </div>
             </div>
         </div>
