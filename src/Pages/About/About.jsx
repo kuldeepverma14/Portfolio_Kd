@@ -128,7 +128,7 @@ function About() {
         </div>
       </div>
       <div className='mt-10 '>
-        <div className='flex items-center'> <h1 className='text-[#AAAAAA]'>SKILLS</h1> <p className='bg-blue-500 w-20 h-[2px]' ></p> </div>
+        <div className='flex items-center gap-5'> <h1 className='text-[#AAAAAA]'>SKILLS</h1> <p className='bg-blue-500 w-20 h-[2px]' ></p> </div>
         <div className='mt-5 grid sm:grid-cols-2 gap-5   '>
           <ProgessBar skillsData={skillsData} />
         </div>

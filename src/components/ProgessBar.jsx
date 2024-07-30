@@ -10,7 +10,7 @@ function ProgressBar({ skillsData }) {
                             <p>{item.skill}</p>
                             <p>{item.score}%</p>
                         </div>
-                        <div className="w-full h-2 bg-[#0D0D0D]">
+                        <div className="w-full h-2 bg-black xsm:bg-[#0D0D0D]">
                             <div
                             className="h-full bg-blue-500"
                             style={{ width: `${item.score}%` }}
