@@ -26,6 +26,35 @@ function Resume() {
 
                             </div>
                         </div>
+                        <h1 className="font-bold text-3xl mt-8">Education</h1>
+                        <div className="grid grid-cols-12 mt-5 ">
+                            <div className="relative col-span-1 bg-black xsm:bg-[#0D0D0D] w-[4px]">
+                                <div className="bg-blue-500 h-5 w-5 absolute -ml-[8px] rounded-full"></div>
+                            </div>
+                            <div className="col-span-11  ">
+                                <h1 className="text-blue-500 font-semibold text-xl"> Bachelor Of Technology(B.Tech)</h1>
+                                <p className="text-center p-2 w-28 mt-2 bg-black xsm:bg-[#0D0D0D]">2017-2021</p>
+                                <p className="mt-2">Madan Mohan Malaviya University Of Technology, Gorakhpur, UP</p>
+
+                            </div>
+                        </div>
+                        <h1 className="font-bold text-3xl mt-8">Skills</h1>
+                        <div className="grid grid-cols-12 mt-5 ">
+                            <div className="relative col-span-1 bg-black xsm:bg-[#0D0D0D] w-[4px]">
+                                <div className="bg-blue-500 h-5 w-5 absolute -ml-[8px] rounded-full"></div>
+                            </div>
+                            <div className="col-span-11  ">
+                                <div className='flex items-center text-nowrap' > <p className='text-2xl text-blue-500 text-nowrap' > {">"}</p>&nbsp;&nbsp; <h1 className='font-bold flex items-center'>Languages :&nbsp;&nbsp;</h1> <p className='flex items-center'> HTML5, JSON, CSS3, JavaScript, TypeScript</p></div>
+                                <div className='flex items-center text-nowrap' > <p className='text-2xl text-blue-500 text-nowrap' > {">"}</p>&nbsp;&nbsp; <h1 className='font-bold flex items-center'>Frameworks & Libraries :&nbsp;&nbsp;</h1> <p className='flex items-center'>React.js, Redux Toolkit, RTK Query, Next.js, Bootstrap, Tailwind, Shadcn UI, Node.js, Express.js</p></div>
+                                <div className='flex items-center text-nowrap' > <p className='text-2xl text-blue-500 text-nowrap' > {">"}</p>&nbsp;&nbsp; <h1 className='font-bold flex items-center'>API Tools :&nbsp;&nbsp;</h1> <p className='flex items-center'>Git, Github, Swagger, Postman , Thunderclient</p></div>
+                                <div className='flex items-center text-nowrap' > <p className='text-2xl text-blue-500 text-nowrap' > {">"}</p>&nbsp;&nbsp; <h1 className='font-bold flex items-center'>Databases & Backend Services :&nbsp;&nbsp;</h1> <p className='flex items-center'>Firebase, Firestore Database, Realtime Database, Cloud Functions</p></div>
+                                <div className='flex items-center text-nowrap' > <p className='text-2xl text-blue-500 text-nowrap' > {">"}</p>&nbsp;&nbsp; <h1 className='font-bold flex items-center'>Operating System and Security Tools :&nbsp;&nbsp;</h1> <p className='flex items-center'>Linux (Ubuntu)</p></div>
+
+
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div></div>
