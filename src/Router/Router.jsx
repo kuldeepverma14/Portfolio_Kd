@@ -28,14 +28,14 @@ const Router = createBrowserRouter([
                 path: "/resume",
                 element: <Resume />
             },
-            {
-                path: "/services",
-                element: <Services />
-            },
-            {
-                path: "/portfolio",
-                element: <Portfolio />
-            },
+            // {
+            //     path: "/services",
+            //     element: <Services />
+            // },
+            // {
+            //     path: "/portfolio",
+            //     element: <Portfolio />
+            // },
             {
                 path: "/contact",
                 element: <Contact />
