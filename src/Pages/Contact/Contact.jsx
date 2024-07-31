@@ -33,53 +33,53 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-    
+
         const formData2 = {
             from_name: formData.name,
             from_email: formData.email,
-            subject: formData.subject,
             message: formData.message,
+            subject: formData.subject,
         };
-    
+
         emailjs.send(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
             import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
             formData2,
             import.meta.env.VITE_EMAILJS_USER_ID
         )
-        .then((result) => {
-            setStatus('Message sent successfully!');
-            setFormData({
-                name: '',
-                email: '',
-                subject: '',
-                message: ''
+            .then((result) => {
+                setStatus('Message sent successfully!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+            })
+            .catch((error) => {
+                setStatus('Error sending message.');
+                console.error('EmailJS error:', error);
             });
-        })
-        .catch((error) => {
-            setStatus('Error sending message.');
-            console.error('EmailJS error:', error);
-        });
     };
     console.log(status)
     return (
         <>
             <div className=' xsm:bg-black text-white mt-5 p-5'>
                 <div className='flex items-center space-x-5'> <h1 className='text-[#AAAAAA]'>CONTACT</h1> <p className='bg-blue-500 w-20 h-[2px]' ></p> </div>
-                <h1 className='text-4xl font-semibold'>CONTACT ME</h1>
+                <h1 className='text-2xl xsm:text-4xl font-semibold'>CONTACT ME</h1>
                 <div className="grid  grid-cols-12 mt-10 lg:mt-0 gap-5 ">
                     <div className=" flex col-span-12 lg:col-span-6 gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
-                        <div><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><CiLocationOn /></div></div>
+                        <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><CiLocationOn /></div></div>
                         <div>
                             <p className="font-semibold">Address</p>
                             <p>Noida, UP</p>
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6 flex gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
-                        <div><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><IoShareSocial /></div></div>
+                        <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><IoShareSocial /></div></div>
                         <div>
                             <p className="font-semibold">Social Media</p>
-                            <div className='justify-center flex  relative space-x-3' >
+                            <div className='justify-center flex  relative space-x-3 mt-2' >
                                 {links.map((item, i) => (
                                     <Link
                                         key={i}
@@ -99,7 +99,7 @@ const Contact = () => {
                     </div>
                     <div className="col-span-12 lg:col-span-6">
                         <div className="col-span-12 lg:col-span-6 flex gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
-                            <div><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><MdEmail /></div></div>
+                            <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><MdEmail /></div></div>
                             <div>
                                 <p className="font-semibold">Email</p>
                                 <p><a href="mailto:kd2017031059@gmail.com" className="flex items-center"> kd2017031059@gmail.com</a></p>
@@ -107,7 +107,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6 flex gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
-                        <div><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><BiSolidPhoneCall /></div></div>
+                        <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><BiSolidPhoneCall /></div></div>
                         <div>
                             <p className="font-semibold">Call Me</p>
                             <p>+91 9166828589</p>
@@ -166,9 +166,11 @@ const Contact = () => {
                                 ></textarea>
                             </div>
                         </div>
-                        <button type="submit" className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Send Message
-                        </button>
+                        <div className="flex justify-center">
+                            <button type="submit" className="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                Send Message
+                            </button>
+                         </div>
                         {status && <p className="mt-4 text-white">{status}</p>}
                     </form>
                 </div>

@@ -4,7 +4,7 @@ function Resume() {
     return (
         <div className=' xsm:bg-black text-white mt-5 p-5'>
             <div className='flex items-center space-x-5'> <h1 className='text-[#AAAAAA]'>RESUME</h1> <p className='bg-blue-500 w-20 h-[2px]' ></p> </div>
-            <h1 className='text-4xl font-semibold'>CHECK MY RESUME</h1>
+            <h1 className='text-3xl xsm:text-4xl font-semibold'>CHECK MY RESUME</h1>
             <div className='mt-10'>
                 <h1 className="font-bold text-3xl">Summary</h1>
                 <div className="grid grid-cols-12 mt-5 ">

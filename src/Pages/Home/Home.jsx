@@ -26,10 +26,12 @@ function Home() {
     passionFunc()
   }, [])
   return (
-    <div className=' flex flex-col text-white bg-[#0D0D0D]  justify-center h-screen'>
+    <div className='px-3 flex flex-col text-white bg-[#0D0D0D]  justify-center h-screen'>
       <div>
         <h1 className='flex justify-center  font-extrabold text-4xl'>Kuldeep Verma</h1>
-        <p className='flex justify-center mt-5'>I am a passionate &nbsp;<i className='underline text-blue-500 font-bold'>{text}</i> &nbsp;  from Noida, Uttar Pradesh</p>
+        <p className='text-center'><i className='underline  text-blue-500 font-bold'>{text}</i></p> 
+        <p className='text-center mt-5'>I am a passionate, smarter and hard working developer</p>
+        {/* <p className='flex justify-center mt-5'>I am a passionate <i className='underline text-blue-500 font-bold'>{text}</i>   from Noida, Uttar Pradesh</p> */}
         <div className='flex justify-center mt-5'>
           <nav className=' '>
             <CustomNavLink to="/">Home</CustomNavLink>

@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from 'react-router-dom';
 
-const CustomNavLink = ({ to, children }) => (
-    <NavLink
+const CustomNavLink = ({ to, children ,close,setClose}) => (
+    <NavLink onClick={()=>setClose(!close)}
         to={to}
         end={to === '/'}
         className={({ isActive }) =>
-            `relative inline-block px-5 py-2 
+            `relative inline-block px-3 xsm:px-5 py-2 
              text-white
              transition-colors duration-300 
              after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bg-blue-500 after:bottom-0

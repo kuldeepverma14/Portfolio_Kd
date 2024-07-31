@@ -85,7 +85,7 @@ function About() {
   return (
     <div className=' xsm:bg-black text-white mt-5 p-5'>
       <div className='flex items-center space-x-5'> <h1 className='text-[#AAAAAA]'>ABOUT</h1> <p className='bg-blue-500 w-20 h-[2px]' ></p> </div>
-      <h1 className='text-4xl font-semibold'>LEARN MORE ABOUT ME</h1>
+      <h1 className='text-2xl xsm:text-4xl font-semibold'>LEARN MORE ABOUT ME</h1>
       <div className='grid xl:grid-cols-4 mt-5'>
         <div className='xl:col-span-1 flex justify-center' > <img src={mypic} className='h-72 w-52' alt="notfound" /> </div>
         <div className='xl:col-span-3 mt-5 xl:mt-0' >
