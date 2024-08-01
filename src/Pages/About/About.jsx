@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import mypic from "../.././assets/mypic.jpeg"
+import mypic from "../.././assets/pic.jpeg"
 import { FaRegSmileBeam } from 'react-icons/fa'
 import { GoProjectRoadmap } from 'react-icons/go'
 import { GiHappySkull } from 'react-icons/gi'
