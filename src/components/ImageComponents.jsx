@@ -25,10 +25,10 @@ const ImageComponent = ({ mypic }) => {
                 className="flex justify-center items-center "
                 overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
             >
-                <button onClick={closeModal} className="block absolute top-20 sm450:top-8 xsm:top-4 left-0 lg:left-10  m-4 z-50 text-white"><FaTimes size={24} /></button>
+                <button onClick={closeModal} className="block absolute top-4 left-0 lg:left-10 z-50 m-4  text-white"><FaTimes size={24} /></button>
                 <div className="relative">
                 {/* <button onClick={closeModal} className="block md:hidden absolute top-28 md:top-0 left-0 md:left-10 m-4 z-50 text-black"><FaTimes size={24} /></button> */}
-                    <img src={mypic} className='max-w-full max-h-full mt-5 z-50 object-contain' alt="notfound" />
+                    <img src={mypic} className='max-w-full max-h-full mt-5 border-none ' alt="notfound" />
                 </div>
             </Modal>
         </div>
