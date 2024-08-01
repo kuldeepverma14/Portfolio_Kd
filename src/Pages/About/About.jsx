@@ -4,6 +4,7 @@ import { FaRegSmileBeam } from 'react-icons/fa'
 import { GoProjectRoadmap } from 'react-icons/go'
 import { GiHappySkull } from 'react-icons/gi'
 import ProgessBar from '../../components/ProgessBar'
+import ImageComponent from '../../components/ImageComponents'
 function About() {
   const [text, setText] = useState("Front-end developer")
   const profile = ["Front-end developer", "JavaScript developer", "React.js developer"]
@@ -86,8 +87,9 @@ function About() {
     <div className=' xsm:bg-black text-white mt-5 p-5'>
       <div className='flex items-center space-x-5'> <h1 className='text-[#AAAAAA]'>ABOUT</h1> <p className='bg-blue-500 w-20 h-[2px]' ></p> </div>
       <h1 className='text-2xl xsm:text-4xl font-semibold'>LEARN MORE ABOUT ME</h1>
+      <ImageComponent mypic={mypic} />
       <div className='grid xl:grid-cols-4 mt-5'>
-        <div className='xl:col-span-1 flex justify-center' > <img src={mypic} className='h-72 w-52' alt="notfound" /> </div>
+      {/*   <div className='xl:col-span-1 flex justify-center items-center' > <img src={mypic} className='object-cover h-52  rounded-full w-52' alt="notfound" /> </div> */}
         <div className='xl:col-span-3 mt-5 xl:mt-0' >
           <i className='underline text-blue-500 font-bold'>{text}</i>
           <div>I am a frontend developer passionate about creating intuitive and dynamic user interfaces.</div>
