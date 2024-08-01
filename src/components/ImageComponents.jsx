@@ -13,7 +13,7 @@ const ImageComponent = ({ mypic }) => {
         <div className='xl:col-span-1 flex justify-center items-center mt-5'>
             <img
                 src={mypic}
-                className='h-52 w-52 object-cover rounded-full cursor-pointer'
+                className='h-72 w-72 object-cover rounded-full cursor-pointer'
                 alt="notfound"
                 onClick={openModal}
             />
