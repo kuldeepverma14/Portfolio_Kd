@@ -46,7 +46,7 @@ function Resume() {
                         <div className='flex items-center'>
                             <p className='text-2xl text-blue-500'>{">"}</p>&nbsp;&nbsp;
                             <h1 className='font-bold flex items-center'>Languages :&nbsp;&nbsp;</h1>
-                            <p className='flex items-center'>HTML5, JSON, CSS3, JavaScript, TypeScript</p>
+                            <p className='flex items-center'>HTML5, JSON, CSS3, SCSS, JavaScript, TypeScript</p>
                         </div>
                         <div className='flex items-center'>
                             <p className='text-2xl text-blue-500'>{">"}</p>&nbsp;&nbsp;
@@ -67,6 +67,11 @@ function Resume() {
                             <p className='text-2xl text-blue-500'>{">"}</p>&nbsp;&nbsp;
                             <h1 className='font-bold flex items-center'>Operating System and Security Tools :&nbsp;&nbsp;</h1>
                             <p className='flex items-center'>Linux (Ubuntu)</p>
+                        </div>
+                        <div className='flex items-center'>
+                            <p className='text-2xl text-blue-500'>{">"}</p>&nbsp;&nbsp;
+                            <h1 className='font-bold flex items-center'>Additional Skills:&nbsp;&nbsp;</h1>
+                            <p className='flex items-center'>Data Structures and Algorithms</p>
                         </div>
                     </div>
 

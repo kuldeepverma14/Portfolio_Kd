@@ -42,6 +42,10 @@ function About() {
       score: "90"
     },
     {
+      skill: "sCSS",
+      score: "90"
+    },
+    {
       skill: "JavaScript",
       score: "95"
     },
@@ -60,6 +64,10 @@ function About() {
     {
       skill: "JSON",
       score: "99"
+    },
+    {
+      skill: "DSA",
+      score: "70"
     },
     {
       skill: "Tailwind CSS",
