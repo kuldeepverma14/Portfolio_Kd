@@ -28,7 +28,7 @@ const ImageComponent = ({ mypic }) => {
                 <button onClick={closeModal} className="block absolute top-4 left-0 lg:left-10 z-50 m-4  text-white"><FaTimes size={24} /></button>
                 <div className="relative">
                 {/* <button onClick={closeModal} className="block md:hidden absolute top-28 md:top-0 left-0 md:left-10 m-4 z-50 text-black"><FaTimes size={24} /></button> */}
-                    <img src={mypic} className='max-w-full max-h-full mt-5 border-none ' alt="notfound" />
+                    <img src={mypic} className='max-w-[100vw] max-h-screen rounded-lg border-none ' alt="notfound" />
                 </div>
             </Modal>
         </div>
