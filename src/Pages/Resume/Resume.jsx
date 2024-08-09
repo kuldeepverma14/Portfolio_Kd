@@ -32,7 +32,7 @@ function Resume() {
                     </div>
                     <div className="col-span-11  ">
                         <h1 className="text-blue-500 font-semibold text-xl"> Bachelor Of Technology(B.Tech)</h1>
-                        <p className="text-center p-2 w-28 mt-2 bg-black xsm:bg-[#0D0D0D]">2017-2021</p>
+                        <p className="text-center p-2 w-28 mt-2 bg-[#34495e]">2017-2021</p>
                         <p className="mt-2">Madan Mohan Malaviya University Of Technology, Gorakhpur, UP</p>
 
                     </div>
@@ -86,7 +86,7 @@ function Resume() {
                     <div className="col-span-11  ">
                         <h1 className="text-blue-500 font-semibold text-xl">Frontend Developer</h1>
                         <p className="mt-2">Xaltam Technology, Noida, UP</p>
-                        <p className="text-center p-2 text-nowrap w-44 mt-2 bg-black xsm:bg-[#0D0D0D]">Feb 2024 - Present</p>
+                        <p className="text-center p-2 text-nowrap w-44 mt-2 bg-[#34495e]">Feb 2024 - Present</p>
                         <p className="mt-2">Developing milk product-based three admin dashboards entails creating separate interfaces for managing various aspects
                             of milk products, incorporating dynamic routing to navigate through different product categories seamlessly. Moreover,
                             the integration of Google reCAPTCHA and Google Maps enhances security measures and provides location-based
@@ -101,7 +101,23 @@ function Resume() {
                     <div className="col-span-11  ">
                         <h1 className="text-blue-500 font-semibold text-xl"> Junior Frontend Developer</h1>
                         <p className="mt-2">Equartis Technology, Panchkula, Chandigarh</p>
-                        <p className="text-center p-2 text-nowrap w-44 mt-2 bg-black xsm:bg-[#0D0D0D]">June 2022 - Jan 2024</p>
+                        <p className="text-center p-2 text-nowrap w-44 mt-2 bg-[#34495e]">June 2022 - Jan 2024</p>
+                        <p className="mt-2">Commenced the Call Center project by architecting three distinct admin dashboards, employing cutting-edge
+                            technologies such as Redux Toolkit and RTK Query for state management and efficient data fetching, respectively.
+                            Validation logic was implemented using the Yup library to ensure data integrity and accuracy. Additionally, contributed
+                            to the development of five websites, leveraging Next.js for one of them, with UI components crafted using Shadcn UI to
+                            achieve a polished and responsive user interface.</p>
+
+                    </div>
+                </div>
+                <div className="grid grid-cols-12 mt-5 ">
+                    <div className="relative col-span-1 bg-black xsm:bg-[#0D0D0D] w-[4px]">
+                        <div className="bg-blue-500 h-5 w-5 absolute -ml-[8px] rounded-full"></div>
+                    </div>
+                    <div className="col-span-11  ">
+                        <h1 className="text-blue-500 font-semibold text-xl"> Junior Frontend Developer</h1>
+                        <p className="mt-2">Equartis Technology, Panchkula, Chandigarh</p>
+                        <p className="text-center p-2 text-nowrap w-44 mt-2 bg-[#34495e]">Aug 2021 - May 2022</p>
                         <p className="mt-2">Commenced the Call Center project by architecting three distinct admin dashboards, employing cutting-edge
                             technologies such as Redux Toolkit and RTK Query for state management and efficient data fetching, respectively.
                             Validation logic was implemented using the Yup library to ensure data integrity and accuracy. Additionally, contributed

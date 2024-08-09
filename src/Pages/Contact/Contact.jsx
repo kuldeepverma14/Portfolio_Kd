@@ -67,15 +67,15 @@ const Contact = () => {
             <div className=' xsm:bg-black text-white mt-5 p-5'>
                 <div className='flex items-center space-x-5'> <h1 className='text-[#AAAAAA]'>CONTACT</h1> <p className='bg-blue-500 w-20 h-[2px]' ></p> </div>
                 <h1 className='text-2xl xsm:text-4xl font-semibold'>CONTACT ME</h1>
-                <div className="grid  grid-cols-12 mt-10 lg:mt-0 gap-5 ">
-                    <div className=" flex col-span-12 lg:col-span-6 gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
+                <div className="grid  grid-cols-12 mt-10 lg:mt-5 gap-5 ">
+                    <div className=" flex col-span-12 lg:col-span-6 gap-5 bg-[#34495e] p-5">
                         <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><CiLocationOn /></div></div>
                         <div>
                             <p className="font-semibold">Address</p>
                             <p>Noida, UP</p>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-6 flex gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
+                    <div className="col-span-12 lg:col-span-6 flex gap-5 bg-[#34495e] p-5">
                         <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><IoShareSocial /></div></div>
                         <div>
                             <p className="font-semibold">Social Media</p>
@@ -98,7 +98,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-6">
-                        <div className="col-span-12 lg:col-span-6 flex gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
+                        <div className="col-span-12 lg:col-span-6 flex gap-5 bg-[#34495e] p-5">
                             <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><MdEmail /></div></div>
                             <div>
                                 <p className="font-semibold">Email</p>
@@ -106,7 +106,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-6 flex gap-5 bg-black xsm:bg-[#0D0D0D] p-5">
+                    <div className="col-span-12 lg:col-span-6 flex gap-5 bg-[#34495e] p-5">
                         <div className="flex items-center"><div className=' text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><BiSolidPhoneCall /></div></div>
                         <div>
                             <p className="font-semibold">Call Me</p>

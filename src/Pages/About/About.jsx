@@ -121,17 +121,17 @@ function About() {
         </div>
       </div>
       <div className=' md:flex  md:space-x-4 mt-20'>
-        <div className='flex flex-col relative items-center py-5  w-[100%] md:w-[33%] bg-black xsm:bg-[#0D0D0D] shadow-xl'>
+        <div className='flex flex-col relative items-center py-5  w-[100%] md:w-[33%] bg-[#34495e] shadow-xl'>
           <div className='absolute -mt-10 text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><FaRegSmileBeam /></div>
           <p className='mt-3 text-2xl'>10</p>
           <p className='mt-3'>Happy Clients</p>
         </div>
-        <div className='flex flex-col relative items-center py-5 mt-10 md:mt-0 w-[100%] md:w-[33%] bg-black xsm:bg-[#0D0D0D] shadow-xl'>
+        <div className='flex flex-col relative items-center py-5 mt-10 md:mt-0 w-[100%] md:w-[33%] bg-[#34495e] shadow-xl'>
           <div className='absolute -mt-10 text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><GoProjectRoadmap /></div>
           <p className='mt-3 text-2xl'>12</p>
           <p className='mt-3'>Projects</p>
         </div>
-        <div className='flex flex-col relative items-center py-5 mt-10 md:mt-0 w-[100%] md:w-[33%] bg-black xsm:bg-[#0D0D0D] shadow-xl'>
+        <div className='flex flex-col relative items-center py-5 mt-10 md:mt-0 w-[100%] md:w-[33%] bg-[#34495e] shadow-xl'>
           <div className='absolute -mt-10 text-2xl text-blue-500 bg-[#2D2D2D] h-10 w-10 rounded-full flex justify-center items-center' ><GiHappySkull /></div>
           <p className='mt-3 text-2xl'>2</p>
           <p className='mt-3'>Appraisals</p>
