@@ -42,7 +42,7 @@ function Resume() {
                     <div className="relative col-span-1 bg-black xsm:bg-[#0D0D0D] w-[4px]">
                         <div className="bg-blue-500 h-5 w-5 absolute -ml-[8px] rounded-full"></div>
                     </div>
-                    <div className="col-span-11 overflow-x-scroll text-nowrap">
+                    <div className="col-span-11 overflow-x-scroll hide-scrollbar text-nowrap">
                         <div className='flex items-center'>
                             <p className='text-2xl text-blue-500'>{">"}</p>&nbsp;&nbsp;
                             <h1 className='font-bold flex items-center'>Languages :&nbsp;&nbsp;</h1>
